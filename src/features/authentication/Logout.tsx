@@ -3,7 +3,7 @@ import { useLogout } from "@/hooks/authentication";
 
 import { ButtonIcon, SpinnerMini } from "@/components/ui";
 
-function Logout() {
+const Logout = () => {
     const { logout, isLoading } = useLogout();
 
     return (
@@ -11,6 +11,6 @@ function Logout() {
             {!isLoading ? <HiArrowRightOnRectangle /> : <SpinnerMini />}
         </ButtonIcon>
     );
-}
+};
 
 export default Logout;
