@@ -5,7 +5,7 @@ import { useLogin } from "@/hooks/authentication";
 import { Button, SpinnerMini } from "@/components/ui";
 import { Form, Input, FormRowVertical } from "@/components/form";
 
-function LoginForm() {
+const LoginForm = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const { login, isLoading } = useLogin();
@@ -55,6 +55,6 @@ function LoginForm() {
             </FormRowVertical>
         </Form>
     );
-}
+};
 
 export default LoginForm;
